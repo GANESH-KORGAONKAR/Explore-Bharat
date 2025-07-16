@@ -1,22 +1,96 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
 }
 
-html, body {
-    height: 100%;
-    width: 100%;
+body, html {
+  height: 100%;
+  width: 100%;
+  background-color: #f5f0e1;
 }
 
 #main {
-    height: 100%;
-    width: 100%;
-    background-color: aqua;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
 }
 
 #info-webpage {
-    height: 20vh;
-    width: 50%;
-    background-color: brown;
+  position: fixed;
+  top: 1%;
+  left: 1%;
+  width: 50%;
+  padding: 20px;
+  z-index: 10;
+}
+
+#info-webpage img {
+  width: 20%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+#info-webpage h3 {
+  font-size: 1.5rem;
+  position: absolute;
+  top: 70%;
+  left: 200px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+#info-webpage p {
+  font-size: 1rem;
+  position: absolute;
+  top: 100px;
+  left: 200px;
+  color: #555;
+}
+
+#main-screen {
+  height: 80%;
+  width: 90%;
+  background-color: aqua;
+  position: relative;
+  /* padding-left: 350px; */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+
+.loc-name, .loc-info, .loc-img {
+  position: absolute;
+  opacity: 0;
+  color: #2d2d2d;
+}
+
+.loc-name {
+  top: 60%;
+  left: 15%;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.loc-info {
+  top: 70%;
+  left: 15%;
+  width: 20%;
+  font-size: 1rem;
+  color: #444;
+}
+
+.loc-img img {
+  height: 100%;
+  top: 40%;
+  left: 80%;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
